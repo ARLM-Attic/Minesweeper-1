@@ -1,0 +1,15 @@
+Assign1: Due 11:59PM February 15
+
+In this assignment we'll use test first development to create the program we discussed 
+in homework 1.
+
+Follow test first coding, don't write any code unless a failing test demands it. Write minimum 
+code to make tests pass. Start early and take very small steps. Ask for frequent reviews. 
+You can ask for your first review as soon as you write the canary test.
+
+Keep your tests passing at all times. Keep the design lightweight and the code quality high.
+
+After the implementation is complete (and only after it's complete), in this file, compare 
+the design created in Assign1 with the design described in Homework
+
+ 1. This exercise was an adventure of many twists and turns with a few roadblocks along the way. In our initial plans for the implementation of Minesweeper we had believed that we would require 6 classes. We had planned for an MVC based approach which meant a GameBoardController , GameBoardView , and GameBoardModel. The GameBoardModel was going to contain Cells which could be either of the derived class, MineCell or SafeCell. When we began using test driven development, we started writing tests to implement the software, it became apparent that the model abstraction was not necessary as the cells were simply elements that could be represented by a double dimension array whose values were set by an ENUM. This eliminated the need for the GameBoardModel and the Cell classes that it used, meaning MineCell and SafeCell. This was not obvious at first, but by using tests and only writing the minimal code to get the tests to pass, it developed incrementally into the final product. From the original plan, we are left with GameBoardController and GameBoardView; The final project implemented GameBoardController and GameBoardFrame. As we discovered, it was a much simpler design that what we had originally expected as we ended up with 2 classes instead of 6, a third of the amount. This reduction can be attributed to the test driven development practice and a practice of only writing necessary code.

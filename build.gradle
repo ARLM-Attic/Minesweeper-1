@@ -1,0 +1,21 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+
+sourceSets.main.java.srcDirs = ['src']
+sourceSets.test.java.srcDirs = ['test']
+
+dependencies {
+  testCompile group: 'junit', name: 'junit', version: "4.+"
+}
+
+repositories {
+  mavenCentral()
+}
+
+task(runui, dependsOn: 'classes', type: JavaExec) {
+  main = 'com.smissenwong.ui.GameBoardFrame'
+  classpath = sourceSets.main.runtimeClasspath
+}
+
+defaultTasks 'clean', 'test', 'runui'

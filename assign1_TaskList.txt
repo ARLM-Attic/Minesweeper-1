@@ -1,0 +1,78 @@
+Assign1 Task List:
+
+create task list - done
+remove testCreateNewGameBoard - done
+refactor testIsGameOver to testIsGameOverOnCreate - done
+remove testSetBombs - done
+create testFlagCell - done
+create testUnflagCell - done
+minimize code in GameBoardController - done
+create more useful variable names in flagCellAt - done
+create testFlagExposedCell - done
+create testExposeFlaggedCell - done
+refactor testExposeCell to testExposeSealedCell - done
+refactor testFlagCell to testFlagSealedCell - done
+refactor testUnflagCell to testUnflagSealedCell - done
+create testLoseGameByExposingAMineCell - done
+create testWinGameByFlaggingAllMinesAndExposingAllEmptyCells - done
+create testExposeOutOfBoundCell - done
+create testFlagOutOfBoundCell - done
+create testUnflagOutOfBoundCell - done
+
+//Are these needed ? They aren't something a user can do
+create testFindEmptyCell
+create testExposeAdjacentEmptyCells
+create testSetBombAdjacencyRatingOnCell
+create testCheckIfCellIsMine
+create testCheckIfCellIsEmpty
+create testCheckIfAllBombsFlagged
+create testWinGameByFlaggingAllMines - implemented with testWinGameByFlaggingAllMinesAndExposingAllEmptyCells - done
+create testLoseGameByExposingMine - implemented with testLoseGameByExposingAMineCell - done
+//
+
+refactor _grid to _cellStatus - done
+refactor _values to _cellValue - done
+create testCheckNoMines - done
+create testAddMinesToGameBoard - done
+create testFindEmptyCell - done
+create testResetGameBoardMineFree - done
+create testCountMinesAdjacentTopLeftCorner - done
+create testCountMinesAdjacentTopRightCorner - done
+create testCountMinesAdjacentBottomRightCorner - done
+create testCountMinesAdjacentBottomLeftCorner - done
+create testCountMinesAdjacentTopSide - done
+create testCountMinesAdjacentRightSide - done
+create testCountMinesAdjacentBottomSide - done
+create testCountMinesAdjacentLeftSide - done
+create testCountMinesAdjacentMiddle - done
+create testAutoExposeAdjacentEmptyCellsOnExposeClick
+
+remove testAddMinesToGameBoardTwice - done
+remove NUMBER_OF_MINES from GameBoardController - done
+remove CellValue - done
+remove isGameBordMineFree - done
+remove isCellEmptyAt - done
+remove getRandomNumber - done
+remove resetGameBoard - done
+remove calculateAdjacentValues - done
+refactor setMine to be simple set - done
+remove addMinesToGameBoard - done
+refactor isGameWon to be simpler - done
+
+check for comma spacing - done
+refactor CellValue using boolean - done
+refactor _cellValue to _cellContainsMine - done
+reworked isGameWon - done
+create testGetCellValueTopLeftCorner - done
+
+create testExposeNeighbors - done
+create testWinGameByExposingAllNonMineCells - done
+create testSetMines - done
+create testResetGame - done
+create testIsFlagged - done
+create testExposeAllMinesOnLoseGame - done
+fix bug that allows for an additional click, after clicking on mine
+fix bug that allows you to expose a flagged cell - done
+
+
+
